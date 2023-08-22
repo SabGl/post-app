@@ -1,0 +1,19 @@
+<div class="post" *ngIf="post">
+  <div class="header">
+    <h1>{{post.title}}</h1>
+
+    <button
+      mat-flat-button color="primary"
+      routerLink="/main/posts"
+      class="btn btn-link"
+    >Назад</button>
+  </div>
+  <div class="info">
+    <strong>{{post.userId}}</strong>
+  </div>
+
+  <div>
+    <p>{{post.body}}</p>
+  </div>
+
+</div>
